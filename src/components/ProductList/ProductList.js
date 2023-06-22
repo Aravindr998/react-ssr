@@ -6,7 +6,7 @@ const ProductList = ({rowData}) => {
   if (rowData.length) {
     tableRows = rowData.map((item) => {
       return (
-        <tr key={item.id}>
+        <tr key={item.id} className="m-4">
           <td>{item.title}</td>
           <td>{item.description}</td>
           <td>{item.price}</td>
@@ -21,8 +21,7 @@ const ProductList = ({rowData}) => {
 
   return (
     <div
-      className="ag-theme-material"
-      style={{ height: "100vh", width: "100%" }}
+      className="m-4"
     >
       <table>
         <thead>

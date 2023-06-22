@@ -12,7 +12,7 @@ const ProductDetails = ({product}) => {
         <meta property="og:description" content={product.description} />
         <meta property="og:image" content={product.thumbnail} />
       </Helmet>
-      <div className="container flex justify-between m-12">
+      <div className="container flex justify-around p-12 w-full">
         <div className="flex flex-col">
           <div>
             <img
