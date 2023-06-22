@@ -30,9 +30,9 @@ app.get("*", (req, res) => {
     let metaTags;
     if (currentRoute.path === "/products/:id") {
       title = initialData.title;
-      metaTags = `<meta property="og:title" content=${initialData.title} />
-        <meta property="og:description" content=${initialData.description} />
-        <meta property="og:image" content=${initialData.thumbnail} />`;
+      metaTags = `<meta property="og:title" content="${initialData.title}" />
+        <meta property="og:description" content="${initialData.description}" />
+        <meta property="og:image" content="${initialData.thumbnail}" />`;
     }
     res.send(`
         <!DOCTYPE html>
