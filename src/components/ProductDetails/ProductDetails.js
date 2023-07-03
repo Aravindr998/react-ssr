@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import { useParams } from "react-router-dom";
 
 const ProductDetails = ({product}) => {
 
   return (
     <div>
-      <Helmet>
-        <title>{product.title}</title>
-        <meta property="og:title" content={product.title} />
-        <meta property="og:description" content={product.description} />
-        <meta property="og:image" content={product.thumbnail} />
-      </Helmet>
       <div className="container flex justify-around p-12 w-full">
         <div className="flex flex-col">
           <div>
